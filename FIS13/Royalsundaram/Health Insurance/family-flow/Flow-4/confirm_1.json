@@ -1,0 +1,265 @@
+{
+  "signature": "Signature keyId=\"pramaan.ondc.org/beta/preprod/mock/buyer|df0b5672-27f0-42c4-90b5-9138e3c45a79|ed25519\",algorithm=\"ed25519\",created=\"1738154438\",expires=\"1738158038\",headers=\"(created) (expires) digest\",signature=\"U7pdOjiRaTUN8KcbCT4sKRHPErU1yXf9yp6sMTpUrSFKo2TK0CrKeoSaH9jgut67DfOhsSBOcCxz2+g+RrwMBg==\"",
+  "request": {
+    "context": {
+      "action": "confirm",
+      "bap_id": "pramaan.ondc.org/beta/preprod/mock/buyer",
+      "bap_uri": "https://pramaan.ondc.org/beta/preprod/mock/buyer",
+      "bpp_id": "rsmailer.royalsundaram.net",
+      "bpp_uri": "https://rsmailer.royalsundaram.net/",
+      "domain": "ONDC:FIS13",
+      "location": {
+        "country": {
+          "code": "IND"
+        },
+        "city": {
+          "code": "*"
+        }
+      },
+      "message_id": "173f8389-80bf-433b-9143-b51ad29c64a0",
+      "timestamp": "2025-01-29T12:40:38.248Z",
+      "transaction_id": "d16b2f17-9653-4c9f-bf7f-77732b64cd6c",
+      "ttl": "PT10M",
+      "version": "2.0.0"
+    },
+    "message": {
+      "order": {
+        "quote": {
+          "id": "AG002057IHPC238981",
+          "breakup": [
+            {
+              "price": {
+                "currency": "INR",
+                "value": "12763.62"
+              },
+              "title": "BASE_PRICE"
+            },
+            {
+              "price": {
+                "currency": "INR",
+                "value": "0"
+              },
+              "title": "CONVIENCE_FEE"
+            },
+            {
+              "price": {
+                "currency": "INR",
+                "value": "2297.45"
+              },
+              "title": "TAX"
+            },
+            {
+              "price": {
+                "currency": "INR",
+                "value": "0"
+              },
+              "title": "PROCESSING_FEE"
+            },
+            {
+              "price": {
+                "currency": "INR",
+                "value": "100"
+              },
+              "title": "ADD_ONS",
+              "item": {
+                "id": "RSAI-I02-C1",
+                "add_ons": [
+                  {
+                    "id": "C1"
+                  }
+                ]
+              }
+            }
+          ],
+          "price": {
+            "currency": "INR",
+            "value": "15061.07"
+          }
+        },
+        "fulfillments": [
+          {
+            "customer": {
+              "contact": {
+                "email": "boopathid@canvendor.com",
+                "phone": "9103334800"
+              },
+              "person": {
+                "name": "Boopathi D"
+              }
+            },
+            "id": "RSAI-F01",
+            "type": "POLICY"
+          },
+          {
+            "customer": {
+              "contact": {
+                "email": "mail@gmail.com",
+                "phone": "9103334800"
+              },
+              "person": {
+                "name": "John Doe"
+              }
+            }
+          }
+        ],
+        "items": [
+          {
+            "id": "RSAI-I02",
+            "add_ons": [
+              {
+                "id": "C1",
+                "quantity": {
+                  "selected": {
+                    "count": 1
+                  }
+                }
+              }
+            ],
+            "xinput": {
+              "form_response": {
+                "status": "SUCCESS"
+              }
+            }
+          }
+        ],
+        "payments": [
+          {
+            "collected_by": "BPP",
+            "params": {
+              "amount": "15061.07",
+              "bank_account_number": "1800002341",
+              "bank_code": "SBIN0001234",
+              "currency": "INR",
+              "transaction_id": "d16b2f17-9653-4c9f-bf7f-77732b64cd6c"
+            },
+            "status": "PAID",
+            "type": "PRE-ORDER",
+            "tags": [
+              {
+                "descriptor": {
+                  "code": "BUYER_FINDER_FEES"
+                },
+                "display": false,
+                "list": [
+                  {
+                    "descriptor": {
+                      "code": "BUYER_FINDER_FEES_TYPE"
+                    },
+                    "value": "percent-annualized"
+                  },
+                  {
+                    "descriptor": {
+                      "code": "BUYER_FINDER_FEES_PERCENTAGE"
+                    },
+                    "value": "1"
+                  }
+                ]
+              },
+              {
+                "descriptor": {
+                  "code": "SETTLEMENT_TERMS"
+                },
+                "display": false,
+                "list": [
+                  {
+                    "descriptor": {
+                      "code": "SETTLEMENT_WINDOW"
+                    },
+                    "value": "PT60M"
+                  },
+                  {
+                    "descriptor": {
+                      "code": "SETTLEMENT_BASIS"
+                    },
+                    "value": "Delivery"
+                  },
+                  {
+                    "descriptor": {
+                      "code": "SETTLEMENT_TYPE"
+                    },
+                    "value": "upi"
+                  },
+                  {
+                    "descriptor": {
+                      "code": "MANDATORY_ARBITRATION"
+                    },
+                    "value": "true"
+                  },
+                  {
+                    "descriptor": {
+                      "code": "COURT_JURISDICTION"
+                    },
+                    "value": "New Delhi"
+                  },
+                  {
+                    "descriptor": {
+                      "code": "DELAY_INTEREST"
+                    },
+                    "value": "2.5"
+                  },
+                  {
+                    "descriptor": {
+                      "code": "STATIC_TERMS"
+                    },
+                    "value": "https://www.royalsundaram.in/health-insurance/lifeline"
+                  },
+                  {
+                    "descriptor": {
+                      "code": "SETTLEMENT_AMOUNT"
+                    },
+                    "value": "1000"
+                  },
+                  {
+                    "descriptor": {
+                      "code": "OFFLINE_CONTRACT"
+                    },
+                    "value": "true"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "collected_by": "BPP",
+            "params": {
+              "amount": "15061.07",
+              "currency": "INR",
+              "transaction_id": "5114915932634"
+            },
+            "status": "PAID",
+            "type": "POST_FULFILLMENT"
+          }
+        ],
+        "provider": {
+          "id": "RSAI"
+        }
+      }
+    }
+  },
+  "response": {
+    "context": {
+      "action": "confirm",
+      "bap_id": "pramaan.ondc.org/beta/preprod/mock/buyer",
+      "bap_uri": "https://pramaan.ondc.org/beta/preprod/mock/buyer",
+      "domain": "ONDC:FIS13",
+      "location": {
+        "country": {
+          "code": "IND"
+        },
+        "city": {
+          "code": "*"
+        }
+      },
+      "message_id": "173f8389-80bf-433b-9143-b51ad29c64a0",
+      "timestamp": "2025-01-29T12:40:38.456568021Z",
+      "transaction_id": "d16b2f17-9653-4c9f-bf7f-77732b64cd6c",
+      "ttl": "PT10M",
+      "version": "2.0.0"
+    },
+    "message": {
+      "ack": {
+        "status": "ACK"
+      }
+    }
+  }
+}
