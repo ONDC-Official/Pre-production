@@ -1,0 +1,117 @@
+{
+  "context": {
+    "domain": "ONDC:FIS12",
+    "location": {
+      "country": {
+        "code": "IND"
+      },
+      "city": {
+        "code": "*"
+      }
+    },
+    "version": "2.0.1",
+    "action": "init",
+    "transaction_id": "f00afa60-be1f-43d5-8d9b-e3fcce962fa5",
+    "message_id": "b43b2689-d3d2-4a82-8556-7d319619fba3",
+    "timestamp": "2025-01-27T10:28:51.686Z",
+    "bap_uri": "https://pramaan.ondc.org/beta/preprod/mock/buyer",
+    "bap_id": "pramaan.ondc.org/beta/preprod/mock/buyer",
+    "ttl": "PT10M",
+    "bpp_id": "preprod.xpressbaazaar.com",
+    "bpp_uri": "https://preprod.xpressbaazaar.com/credit"
+  },
+  "message": {
+    "order": {
+      "provider": {
+        "id": "9094696240"
+      },
+      "items": [
+        {
+          "id": "2456543",
+          "xinput": {
+            "form": {
+              "id": "d5cb60f5-bfde-4a11-b188-bb43ee5c1fa7"
+            },
+            "form_response": {
+              "status": "SUCCESS",
+              "submission_id": "AccInfo_b8305a78-2aa3-49c0-ae2a-86b777ccfde4"
+            }
+          }
+        }
+      ],
+      "payments": [
+        {
+          "id": "PAY-a09a39e5-37c7-4400-80cc-e49075377fef",
+          "collected_by": "BPP",
+          "status": "NOT-PAID",
+          "type": "ON_ORDER",
+          "params": {
+            "bank_code": "ICICI775420",
+            "bank_account_number": "776682194335",
+            "virtual_payment_address": "9988118899@okicic"
+          },
+          "tags": [
+            {
+              "descriptor": {
+                "code": "BUYER_FINDER_FEES"
+              },
+              "display": false,
+              "list": [
+                {
+                  "descriptor": {
+                    "code": "BUYER_FINDER_FEES_TYPE"
+                  },
+                  "value": "percent-annualized"
+                },
+                {
+                  "descriptor": {
+                    "code": "BUYER_FINDER_FEES_PERCENTAGE"
+                  },
+                  "value": "1"
+                }
+              ]
+            },
+            {
+              "descriptor": {
+                "code": "SETTLEMENT_TERMS"
+              },
+              "display": false,
+              "list": [
+                {
+                  "descriptor": {
+                    "code": "DELAY_INTEREST"
+                  },
+                  "value": "2.5"
+                },
+                {
+                  "descriptor": {
+                    "code": "STATIC_TERMS"
+                  },
+                  "value": "https://bap.credit.becknprotocol.io/personal-banking/loans/personal-loan"
+                },
+                {
+                  "descriptor": {
+                    "code": "OFFLINE_CONTRACT"
+                  },
+                  "value": "true"
+                },
+                {
+                  "descriptor": {
+                    "code": "SETTLEMENT_AMOUNT"
+                  },
+                  "value": "200.00"
+                },
+                {
+                  "descriptor": {
+                    "code": "SETTLEMENT_TYPE"
+                  },
+                  "value": "neft"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

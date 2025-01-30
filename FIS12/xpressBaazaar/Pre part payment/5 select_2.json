@@ -1,0 +1,44 @@
+{
+  "context": {
+    "domain": "ONDC:FIS12",
+    "location": {
+      "country": {
+        "code": "IND"
+      },
+      "city": {
+        "code": "*"
+      }
+    },
+    "version": "2.0.1",
+    "action": "select",
+    "transaction_id": "f00afa60-be1f-43d5-8d9b-e3fcce962fa5",
+    "message_id": "6de2dd70-7fad-4477-a775-3c1be9ebb5e5",
+    "timestamp": "2025-01-27T10:26:49.585Z",
+    "bap_uri": "https://pramaan.ondc.org/beta/preprod/mock/buyer",
+    "bap_id": "pramaan.ondc.org/beta/preprod/mock/buyer",
+    "ttl": "PT10M",
+    "bpp_id": "preprod.xpressbaazaar.com",
+    "bpp_uri": "https://preprod.xpressbaazaar.com/credit"
+  },
+  "message": {
+    "order": {
+      "provider": {
+        "id": "9094696240"
+      },
+      "items": [
+        {
+          "id": "2456543",
+          "xinput": {
+            "form": {
+              "id": "f284ac58-58d2-4143-a5ad-722aa9a8a266"
+            },
+            "form_response": {
+              "status": "SUCCESS",
+              "submission_id": "LOAN-8e1ae210-e4af-4e0f-a839-171cdacd27d9"
+            }
+          }
+        }
+      ]
+    }
+  }
+}
